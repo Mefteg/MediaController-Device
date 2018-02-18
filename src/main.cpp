@@ -17,12 +17,13 @@ struct Action
     const char* keyword;
 };
 
-const unsigned int ACTIONS_COUNT = 3;
+#define ACTIONS_COUNT 4
 Action ACTIONS[ACTIONS_COUNT] =
 {
     Action(3, "PREVIOUS"),
     Action(4, "PLAY"),
-    Action(5, "NEXT")
+    Action(5, "NEXT"),
+    Action(6, "MODE")
 };
 
 // the setup routine runs once when you switch on the board:
